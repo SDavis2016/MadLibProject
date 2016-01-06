@@ -17,9 +17,9 @@ print("Welcome to Mad Lib Mania! Where you have hundreds (5) of fun (kinda borin
 var game = true
 while game == true {
     print("Main Menu")
-    print("1. Someones")
-    print("2. Someone elses")
-    print("3. The other persons")
+    print("1. Samuel's write in play1 while statement")
+    print("2. Jose's")
+    print("3. Sebo's")
     print("4. Whoever finishes their first one")
     print("5. The next person")
     print("6. Exit the Mania")
