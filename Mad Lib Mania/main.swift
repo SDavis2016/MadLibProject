@@ -13,6 +13,3 @@ func input() -> String {
     var strData = NSString(data: inputData, encoding: NSUTF8StringEncoding)!
     return strData.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
 }
-
-
-
