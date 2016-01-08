@@ -36,9 +36,10 @@ while game == true {
             print("please add a noun")
             var noun3 = input()
             print("please add an adverb")
-            var adverb = input()
+            var adverb1 = input()
             print("please add a noun")
             var noun4 = input()
+            print("John Cena is concerned about his \(noun1). But there's no time to dwell because the WWE is in danger from the evil \(noun2) and the other wrestlers cannot help. John Cena travels to \(place1) to try to help, but he becomes separated from his friends and all seems \(noun3). THe villain's arrogance creats an opening and the friends reunite to defeat their enemy with the of \(adverb1). That conveniently solves everything. John Cena learns a lesson that anwsers his personal dilemma and he is rewarded with a new \(noun4).")
         }
     } else if select == "2" {
         var play2 = true
@@ -100,17 +101,24 @@ while game == true {
             print("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.")
             print("")
             print("Would you like to play again? If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
+            var again3 = true
+            while again3 == true {
             var finished3 = input()
             if finished3 == "1" {
                 play3 = true
+                again3 = false
             } else if finished3 == "2" {
+                again3 = false
                 play3 = false
                 game = true
             } else if finished3 == "3" {
+                again3 = false
                 play3 = false
                 game = false
             } else {
                 print("Please select your next step! 1 lets you play again, 2 takes you back to main menu, 3 exits Mad Lib Mania!")
+                again3 = true
+            }
             }
         }
     }else if select == "4" {
