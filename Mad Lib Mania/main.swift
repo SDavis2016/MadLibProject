@@ -58,6 +58,18 @@ while game == true {
             var adj33 = input()
             print("Your completed Mad Lib is:")
             print("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.")
+            print("")
+            print("Would you like to play again? If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
+            var finished3 = input()
+            if finished3 == "1" {
+                play3 = true
+            } else if finished3 == "2" {
+                play3 = false
+                game = true
+            } else if finished3 == "3" {
+                play3 = false
+                game = false
+            }
         }
     }else if select == "4" {
         var play4 = true
