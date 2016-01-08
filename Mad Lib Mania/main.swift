@@ -100,17 +100,24 @@ while game == true {
             print("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.")
             print("")
             print("Would you like to play again? If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
+            var again = true
+            while again == true {
             var finished3 = input()
             if finished3 == "1" {
                 play3 = true
+                again = false
             } else if finished3 == "2" {
+                again = false
                 play3 = false
                 game = true
             } else if finished3 == "3" {
+                again = false
                 play3 = false
                 game = false
             } else {
                 print("Please select your next step! 1 lets you play again, 2 takes you back to main menu, 3 exits Mad Lib Mania!")
+                again = true
+            }
             }
         }
     }else if select == "4" {
