@@ -36,9 +36,10 @@ while game == true {
             print("please add a noun")
             var noun3 = input()
             print("please add an adverb")
-            var adverb = input()
+            var adverb1 = input()
             print("please add a noun")
             var noun4 = input()
+            print("John Cena is concerned about his \(noun1). But there's no time to dwell because the WWE is in danger from the evil \(noun2) and the other wrestlers cannot help. John Cena travels to \(place1) to try to help, but he becomes separated from his friends and all seems \(noun3). THe villain's arrogance creats an opening and the friends reunite to defeat their enemy with the of \(adverb1). That conveniently solves everything. John Cena learns a lesson that anwsers his personal dilemma and he is rewarded with a new \(noun4).")
         }
     } else if select == "2" {
         var play2 = true
