@@ -41,6 +41,23 @@ while game == true {
             print("Type a type of container")
             var container3 = input()
             print("Type an adjective")
+            var adj3 = input()
+            print("Type an adjective again")
+            var adj32 = input()
+            print("Type a noun")
+            var noun3 = input()
+            print("Type an animal")
+            var ani3 = input()
+            print("Type a vegetable")
+            var veggie3 = input()
+            print("Type another vegetable")
+            var veggie32 = input()
+            print("Type a color")
+            var col3 = input()
+            print("Lats one! Type an adjective")
+            var adj33 = input()
+            print("Your completed Mad Lib is:")
+            print("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.")
         }
     }else if select == "4" {
         var play4 = true
