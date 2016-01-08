@@ -19,7 +19,7 @@ while game == true {
     print("Main Menu")
     print("1. Samuel's write in play1 while statement")
     print("2. Jose's")
-    print("3. Sebo's")
+    print("3. Lunch Room")
     print("4. Whoever finishes their first one")
     print("5. The next person")
     print("6. Exit the Mania")
@@ -37,7 +37,10 @@ while game == true {
     } else if select == "3" {
         var play3 = true
         while play3 == true {
-            
+            print("Welcome to Lunch Room!")
+            print("Type a type of container")
+            var container3 = input()
+            print("Type an adjective")
         }
     }else if select == "4" {
         var play4 = true
