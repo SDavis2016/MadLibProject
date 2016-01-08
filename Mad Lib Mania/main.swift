@@ -109,6 +109,8 @@ while game == true {
             } else if finished3 == "3" {
                 play3 = false
                 game = false
+            } else {
+                print("Please select your next step! 1 lets you play again, 2 takes you back to main menu, 3 exits Mad Lib Mania!")
             }
         }
     }else if select == "4" {
