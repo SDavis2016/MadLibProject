@@ -57,3 +57,43 @@ while game == true {
         game = true
     }
 }
+
+print("Type a persons name")
+var person2 = input()
+print("Type a place")
+var place2 = input()
+print("Type an adjective")
+var adjective2 = input()
+print("Type a plural noun")
+var pluralNoun2 = input()
+print("Type another adjective")
+var adjective22 = input()
+print("Type another plural noun")
+var pluralNoun22 = input()
+print("Type another place")
+var place22 = input()
+print("Type an action verd")
+var actionVerd2 = input()
+print("Type one last plural noun")
+var pluralNoun222 = input()
+print("LOL JK type another plural noun")
+var pluralNoun2222 = input()
+print("Type a noun")
+var noun2 = input()
+print("Type another action verd")
+var actionVerd22 = input()
+print("Last one promise just type one last action verd")
+var actionVerd222 = input()
+print("HA GOT YOU AGAIN but seriously last one just type an adjective")
+var adjective222 = input()
+
+
+
+
+
+
+
+
+
+
+
