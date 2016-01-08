@@ -44,6 +44,35 @@ while game == true {
     } else if select == "2" {
         var play2 = true
         while play2 == true {
+            print("Type a persons name")
+            var person2 = input()
+            print("Type a place")
+            var place2 = input()
+            print("Type an adjective")
+            var adjective2 = input()
+            print("Type a plural noun")
+            var pluralNoun2 = input()
+            print("Type another adjective")
+            var adjective22 = input()
+            print("Type another plural noun")
+            var pluralNoun22 = input()
+            print("Type another place")
+            var place22 = input()
+            print("Type an action verd")
+            var actionVerd2 = input()
+            print("Type one last plural noun")
+            var pluralNoun222 = input()
+            print("LOL JK type another plural noun")
+            var pluralNoun2222 = input()
+            print("Type a noun")
+            var noun2 = input()
+            print("Type another action verd")
+            var actionVerd22 = input()
+            print("Last one promise just type one last action verd")
+            var actionVerd222 = input()
+            print("HA GOT YOU AGAIN but seriously last one just type an adjective")
+            var adjective222 = input()
+            print("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(adjective22) ")
             
         }
     } else if select == "3" {
@@ -72,15 +101,24 @@ while game == true {
             print("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.")
             print("")
             print("Would you like to play again? If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
+            var again = true
+            while again == true {
             var finished3 = input()
             if finished3 == "1" {
                 play3 = true
+                again = false
             } else if finished3 == "2" {
+                again = false
                 play3 = false
                 game = true
             } else if finished3 == "3" {
+                again = false
                 play3 = false
                 game = false
+            } else {
+                print("Please select your next step! 1 lets you play again, 2 takes you back to main menu, 3 exits Mad Lib Mania!")
+                again = true
+            }
             }
         }
     }else if select == "4" {
@@ -101,6 +139,13 @@ while game == true {
         game = true
     }
 }
+
+
+
+
+
+
+
 
 
 
