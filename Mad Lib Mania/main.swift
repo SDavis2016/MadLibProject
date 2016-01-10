@@ -17,11 +17,11 @@ print("Welcome to Mad Lib Mania! Where you have hundreds (5) of fun (kinda borin
 var game = true
 while game == true {
     print("Main Menu")
-    print("1. Samuel's write in play1 while statement")
-    print("2. Jose's")
+    print("1. PLease Name Your Mad Lib")
+    print("2. PLease Name Your Mad Lib")
     print("3. Lunch Room")
-    print("4. Whoever finishes their first one")
-    print("5. The next person")
+    print("4. PLease Name Your Mad Lib")
+    print("5. PLease Name Your Mad Lib")
     print("6. Exit the Mania")
     var select = input()
     if select == "1" {
