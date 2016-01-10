@@ -13,7 +13,7 @@ func input() -> String {
     var strData = NSString(data: inputData, encoding: NSUTF8StringEncoding)!
     return strData.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
 }
-var savedLibs: [String] = []
+var savedLibs: [Int: String] = [8: "Terminated"]
 print("Welcome to Mad Lib Mania! Where you have hundreds (5) of fun (kinda boring) Mad Libs to choose from. Please, select your Mad Lib number!")
 var game = true
 while game == true {
@@ -103,8 +103,8 @@ while game == true {
             print("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.")
             print("")
             var lib3 = "Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas."
-            savedLibs.append(lib3)
-            print("Would you like to play again? If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
+            savedLibs.updateValue(lib3, forKey: 3)
+            print("Would you like to play again? (warning it will reset all your previous answers) If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
             var again3 = true
             while again3 == true {
             var finished3 = input()
@@ -147,19 +147,22 @@ while game == true {
         print("6. Return to main menu")
         var reviewSelect = input()
             if reviewSelect == "1" {
-                print(savedLibs[0])
                 
             }else if reviewSelect == "2" {
                 
             }else if reviewSelect == "3" {
-                
+                print(savedLibs[3])
+                print("")
             }else if reviewSelect == "4" {
                 
             }else if reviewSelect == "5" {
                 
-            } else if reviewSelect == "6" {
+            }else if reviewSelect == "6" {
                 review = false
                 game = true
+            }else {
+                print("Please select desired number")
+                review = true
             }
         }
     }else if select == "7" {
@@ -170,13 +173,4 @@ while game == true {
         game = true
     }
 }
-
-
-
-
-
-
-
-
-
 
