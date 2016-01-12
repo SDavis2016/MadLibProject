@@ -42,6 +42,22 @@ while game == true {
             print("please add a noun")
             var noun4 = input()
             print("John Cena is concerned about his \(noun1). But there's no time to dwell because the WWE is in danger from the evil \(noun2) and the other wrestlers cannot help. John Cena travels to \(place1) to try to help, but he becomes separated from his friends and all seems \(noun3). THe villain's arrogance creats an opening and the friends reunite to defeat their enemy with the of \(adverb1). That conveniently solves everything. John Cena learns a lesson that anwsers his personal dilemma and he is rewarded with a new \(noun4).")
+            print("do you want to play again? yes = 1. exit program = 2. retern to main menu = 0")
+            var somthing1 = input()
+            var somthing2 = true
+            while somthing2 == true {
+                if somthing1 == "1" {
+                    play1 = true
+                } else if somthing1 == "2" {
+                    game = false
+                } else if somthing1 == "0" {
+                    somthing2 = false
+                    game = true
+                } else {
+                    print("please choose one of the options")
+                    somthing2 = true
+                }
+        }
         }
     } else if select == "2" {
         var play2 = true
