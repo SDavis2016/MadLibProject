@@ -46,17 +46,18 @@ while game == true {
             var somthing1 = input()
             var somthing2 = true
             while somthing2 == true {
-                if somthing1 = "1" {
+                if somthing1 == "1" {
                     play1 = true
-                } else if somthing1 = "2" {
+                } else if somthing1 == "2" {
                     game = false
-                } else is somthing1 = "0" {
+                } else if somthing1 == "0" {
                     somthing2 = false
                     game = true
                 } else {
                     print("please choose one of the options")
                     somthing2 = true
                 }
+        }
         }
     } else if select == "2" {
         var play2 = true
