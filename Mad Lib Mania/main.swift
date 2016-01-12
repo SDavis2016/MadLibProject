@@ -91,6 +91,7 @@ while game == true {
             print("HA GOT YOU AGAIN but seriously last one just type an adjective")
             var adjective222 = input()
             print("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(pluralNoun2), and they make \(adjective22) \(pluralNoun22) there. Many people also go to \(place22) to \(actionVerd2) or see the \(pluralNoun222). The people that live there love to eat \(pluralNoun2222) and are very pround of their big \(noun2). They also like to \(actionVerd22) in the sun and swim in the \(actionVerd222)! It was a really \(adjective222) trip! ")
+            print("")
             print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
             var again3 = true
             while again3 == true {
@@ -124,6 +125,7 @@ while game == true {
             var adj32 = input()
             print("Type a noun")
             var noun3 = input()
+            //stinky, fart, poop,
             print("Type an animal")
             var ani3 = input()
             print("Type a vegetable")
