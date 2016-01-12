@@ -149,7 +149,14 @@ while game == true {
     }else if select == "5" {
         var play5 = true
         while play5 == true {
-         
+         print("add an adjetive")
+            var adjective = input()
+            print("add a person's name")
+            var name = input()
+            print("and a noun")
+            var noun = input()
+            print("pural noun")
+            
         }
     }else if select == "6" {
         var review = true
