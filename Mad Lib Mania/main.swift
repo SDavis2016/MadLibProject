@@ -19,7 +19,7 @@ var game = true
 while game == true {
     print("Main Menu")
     print("1. PLease Name Your Mad Lib")
-    print("2. PLease Name Your Mad Lib")
+    print("2. ROAD TRIP")
     print("3. Lunch Room")
     print("4. PLease Name Your Mad Lib")
     print("5. PLease Name Your Mad Lib")
@@ -90,8 +90,28 @@ while game == true {
             var actionVerd222 = input()
             print("HA GOT YOU AGAIN but seriously last one just type an adjective")
             var adjective222 = input()
-            print("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(pluralNoun2), and they make \(adjective22) \(pluralNoun22) there. Many people also go to \(place22) to \(actionVerd2) or see the \(pluralNoun222). The people that live there love to eat \(pluralNoun2222) and are very pround of their big \(noun2). They also like to \(actionVerd22) in the sun  ")
-            
+            print("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(pluralNoun2), and they make \(adjective22) \(pluralNoun22) there. Many people also go to \(place22) to \(actionVerd2) or see the \(pluralNoun222). The people that live there love to eat \(pluralNoun2222) and are very pround of their big \(noun2). They also like to \(actionVerd22) in the sun and swim in the \(actionVerd222)! It was a really \(adjective222) trip! ")
+            print("")
+            print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
+            var again3 = true
+            while again3 == true {
+                var finished3 = input()
+                if finished3 == "1" {
+                    play2 = true
+                    again3 = false
+                } else if finished3 == "2" {
+                    again3 = false
+                    play2 = false
+                    game = true
+                } else if finished3 == "3" {
+                    again3 = false
+                    play2 = false
+                    game = false
+                } else {
+                    print("Please select your next step! 1 lets you play again, 2 takes you back to main menu, 3 exits Mad Lib Mania!")
+                    again3 = true
+                }
+            }
         }
     } else if select == "3" {
         var play3 = true
@@ -105,6 +125,7 @@ while game == true {
             var adj32 = input()
             print("Type a noun")
             var noun3 = input()
+            //stinky, fart, poop,
             print("Type an animal")
             var ani3 = input()
             print("Type a vegetable")
@@ -144,7 +165,37 @@ while game == true {
     }else if select == "4" {
         var play4 = true
         while play4 == true {
-            
+            print("Type a Verd ending in -ing")
+            var verd4 = input()
+            print("Type an animal")
+            var animal4 = input()
+            print("Type an adjective")
+            var adjective4 = input()
+            print("Type a place")
+            var place4 = input()
+            print("Type a verd")
+            var verd44 = input()
+            print("There are to many \(verd4) \(animal4) on this \(adjective4) \(place4)! He screamed while he \(verd44)")
+            print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
+            var again3 = true
+            while again3 == true {
+                var finished3 = input()
+                if finished3 == "1" {
+                    play4 = true
+                    again3 = false
+                } else if finished3 == "2" {
+                    again3 = false
+                    play4 = false
+                    game = true
+                } else if finished3 == "3" {
+                    again3 = false
+                    play4 = false
+                    game = false
+                } else {
+                    print("Please select your next step! 1 lets you play again, 2 takes you back to main menu, 3 exits Mad Lib Mania!")
+                    again3 = true
+                }
+            }
         }
     }else if select == "5" {
         var play5 = true
