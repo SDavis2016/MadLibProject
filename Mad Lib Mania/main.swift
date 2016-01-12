@@ -151,7 +151,6 @@ while game == true {
         while play5 == true {
          
         }
-        }
     }else if select == "6" {
         var review = true
         while review == true {
