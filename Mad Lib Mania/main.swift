@@ -214,16 +214,20 @@ while game == true {
         print("6. Return to main menu")
         var reviewSelect = input()
             if reviewSelect == "1" {
-                
+                print(savedLibs[1])
+                print("")
             }else if reviewSelect == "2" {
-                
+                print(savedLibs[2])
+                print("")
             }else if reviewSelect == "3" {
                 print(savedLibs[3])
                 print("")
             }else if reviewSelect == "4" {
-                
+                print(savedLibs[4])
+                print("")
             }else if reviewSelect == "5" {
-                
+                print(savedLibs[5])
+                print("")
             }else if reviewSelect == "6" {
                 review = false
                 game = true
