@@ -228,6 +228,7 @@ this is when your done with the mad lib it will give you the option to do anothe
             print("finaly an adjective")
             var adjetive2 = input()
             print("There's this \(adjective) guy named \(name) who brings \(noun) to all the \(pluralnoun) who've been \(adjetive2).")
+            savedLibs.updateValue("There's this \(adjective) guy named \(name) who brings \(noun) to all the \(pluralnoun) who've been \(adjetive2).", forKey: 5)
             print("do you want to play again? yes = 1. exit program = 2. retern to main menu = 0")
             var somthing1 = input()
             var somthing2 = true
