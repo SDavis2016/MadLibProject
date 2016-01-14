@@ -14,6 +14,7 @@ func input() -> String {
     return strData.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
 }
 // This domain brought to you by EpicSebo. This is the main menu, where people then select which if statement they wish to go to, so they can play the selected game.
+// EpicSebo with this... this is the library to be storing completed mad libs
 var savedLibs: [Int: String] = [8: "Terminated"]
 print("Welcome to Mad Lib Mania! Where you have hundreds (5) of fun (kinda boring) Mad Libs to choose from. Please, select your Mad Lib number!")
 var game = true
@@ -44,6 +45,7 @@ while game == true {
             print("please add a noun")
             var noun4 = input()
             print("John Cena is concerned about his \(noun1). But there's no time to dwell because the WWE is in danger from the evil \(noun2) and the other wrestlers cannot help. John Cena travels to \(place1) to try to help, but he becomes separated from his friends and all seems \(noun3). THe villain's arrogance creats an opening and the friends reunite to defeat their enemy with the of \(adverb1). That conveniently solves everything. John Cena learns a lesson that anwsers his personal dilemma and he is rewarded with a new \(noun4).")
+            //EpicSebo saving MadLib to library
             savedLibs.updateValue("John Cena is concerned about his \(noun1). But there's no time to dwell because the WWE is in danger from the evil \(noun2) and the other wrestlers cannot help. John Cena travels to \(place1) to try to help, but he becomes separated from his friends and all seems \(noun3). THe villain's arrogance creats an opening and the friends reunite to defeat their enemy with the of \(adverb1). That conveniently solves everything. John Cena learns a lesson that anwsers his personal dilemma and he is rewarded with a new \(noun4).", forKey: 1)
             print("do you want to play again? yes = 1. exit program = 2. retern to main menu = 0")
             var somthing1 = input()
@@ -97,6 +99,7 @@ This part of the code prints that to the console and tells it to fill in the bla
             print("HA GOT YOU AGAIN but seriously last one just type an adjective")
             var adjective222 = input()
             print("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(pluralNoun2), and they make \(adjective22) \(pluralNoun22) there. Many people also go to \(place22) to \(actionVerd2) or see the \(pluralNoun222). The people that live there love to eat \(pluralNoun2222) and are very pround of their big \(noun2). They also like to \(actionVerd22) in the sun and swim in the \(actionVerd222)! It was a really \(adjective222) trip! ")
+            //EpicSebo saving MadLib to library
             savedLibs.updateValue("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(pluralNoun2), and they make \(adjective22) \(pluralNoun22) there. Many people also go to \(place22) to \(actionVerd2) or see the \(pluralNoun222). The people that live there love to eat \(pluralNoun2222) and are very pround of their big \(noun2). They also like to \(actionVerd22) in the sun and swim in the \(actionVerd222)! It was a really \(adjective222) trip! ", forKey: 2)
 /*
 this is when your done with the mad lib it will give you the option to do another return to menu or exit the program  and also tell you if you want to play again
@@ -125,25 +128,45 @@ this is when your done with the mad lib it will give you the option to do anothe
         }
     } else if select == "3" { // EpicSebo Domain
         var play3 = true
-        while play3 == true { // the following is peoples input on each part of the mad lib so they can end with a completed mad lib.
+        while play3 == true { // the following is peoples input on each part of the mad lib so they can end with a completed mad lib. Along with some added key words that promotes a special responce by the code
             print("Welcome to Lunch Room!")
             print("Type a type of container")
             var container3 = input()
+            if container3 == "box" {
+                print("Really, a box... how do you bring a box to school?? How un-original")
+            }
             print("Type an adjective")
             var adj3 = input()
+            if adj3 == "stinky" {
+                print("Stinky... really... why would you do such a thing? Thats like bringing blue cheese.")
+            }
             print("Type an adjective again")
             var adj32 = input()
+            if adj32 == "stinky" {
+                print("stinky, I knew you'd go there...")
+            }
             print("Type a noun")
             var noun3 = input()
-            //stinky, fart, poop, boogers, armpit,
+            if noun3 == "boogers" {
+                print("NO ONE EVEN DOES THAT ERMERGERD! Boogers, thats the best thing you could come up with.")
+            }
             print("Type an animal")
             var ani3 = input()
             print("Type a vegetable")
             var veggie3 = input()
+            if veggie3 == "poop" {
+                print("Poop isn't a veggie. You can't move on from third grade can you??")
+            }
             print("Type another vegetable")
             var veggie32 = input()
+            if veggie32 == "poop" {
+                print("Poop isn't a veggie. You can't move on from third grade can you??")
+            }
             print("Type a color")
             var col3 = input()
+            if col3 == "green" {
+                print("If you are drinking green milk, then you have other problems")
+            }
             print("Lats one! Type an adjective")
             var adj33 = input()
             //this is the print of the completed mad lib
@@ -191,6 +214,7 @@ This part of the code prints that to the console and tells it to fill in the bla
             print("Type a verd")
             var verd44 = input()
             print("There are to many \(verd4) \(animal4) on this \(adjective4) \(place4)! He screamed while he \(verd44)")
+            //EpicSebo saving MadLib to library
             savedLibs.updateValue("There are to many \(verd4) \(animal4) on this \(adjective4) \(place4)! He screamed while he \(verd44)", forKey: 4)
 /*
 this is when your done with the mad lib it will give you the option to do another return to menu or exit the program  and also tell you if you want to play again
@@ -233,6 +257,7 @@ this is when your done with the mad lib it will give you the option to do anothe
             print("finaly an adjective")
             var adjetive2 = input()
             print("There's this \(adjective) guy named \(name) who brings \(noun) to all the \(pluralnoun) who've been \(adjetive2).")
+            //EpicSebo saving MadLib to library
             savedLibs.updateValue("There's this \(adjective) guy named \(name) who brings \(noun) to all the \(pluralnoun) who've been \(adjetive2).", forKey: 5)
             print("do you want to play again? yes = 1. exit program = 2. retern to main menu = 0")
             var somthing1 = input()
@@ -251,7 +276,7 @@ this is when your done with the mad lib it will give you the option to do anothe
                 }
             }
         }
-    }else if select == "6" {
+    }else if select == "6" { // another EpicSebo domain, this is the review menu, for users to choose which madlib they wish to draw out of the library and print
         var review = true
         while review == true {
         print("Which Mad Lib would you like to review?")
@@ -283,12 +308,12 @@ this is when your done with the mad lib it will give you the option to do anothe
             }else {
                 print("Please select desired number")
                 review = true
-            }
+            } // EpicSebo here, yes this next else if is the exit option, closing the code.
         }
     }else if select == "7" {
         print("Thanks for experiencing the wasted time of your life!")
         game = false
-    } else {
+    } else { // EpicSebo with another tip, this is if they didnt choose within the provided options.
         print("Please select a game number. If you would like to exit and save yourself press 7.")
         game = true
     }
