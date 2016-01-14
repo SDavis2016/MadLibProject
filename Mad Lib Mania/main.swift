@@ -29,6 +29,7 @@ while game == true {
     if select == "1" {
         var play1 = true
         while play1 == true {
+// i samuel bishop did the prints and var statements you see here.
             print ("please add a noun")
             var noun1 = input()
             print("please add a noun")
@@ -206,7 +207,7 @@ This is the code jose did
                 }
             }
         }
-// samuel did this
+// i samuel bishop did the print, var and else if statments you see here.
     }else if select == "5" {
         var play5 = true
         while play5 == true {
