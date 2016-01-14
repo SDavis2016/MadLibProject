@@ -18,11 +18,11 @@ print("Welcome to Mad Lib Mania! Where you have hundreds (5) of fun (kinda borin
 var game = true
 while game == true {
     print("Main Menu")
-    print("1. PLease Name Your Mad Lib")
+    print("1. JOHN CENA!!!!!!!!!!!!!!!!!")
     print("2. ROAD TRIP")
     print("3. Lunch Room")
     print("4. PLease Name Your Mad Lib")
-    print("5. PLease Name Your Mad Lib")
+    print("5. This Guy")
     print("6. Review an already completed Mad Lib")
     print("7. Exit the Mania")
     var select = input()
@@ -206,8 +206,26 @@ while game == true {
             var name = input()
             print("and a noun")
             var noun = input()
-            print("pural noun")
-            
+            print("now a pural noun")
+            var pluralnoun = input()
+            print("finaly an adjective")
+            var adjetive2 = input()
+            print("There's this \(adjective) guy named \(name) who brings \(noun) to all the \(pluralnoun) who've been \(adjetive2).")
+            var somthing1 = input()
+            var somthing2 = true
+            while somthing2 == true {
+                if somthing1 == "1" {
+                    play5 = true
+                } else if somthing1 == "2" {
+                    game = false
+                } else if somthing1 == "0" {
+                    somthing2 = false
+                    game = true
+                } else {
+                    print("please choose one of the options")
+                    somthing2 = true
+                }
+            }
         }
     }else if select == "6" {
         var review = true
