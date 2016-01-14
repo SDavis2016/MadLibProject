@@ -42,6 +42,7 @@ while game == true {
             print("please add a noun")
             var noun4 = input()
             print("John Cena is concerned about his \(noun1). But there's no time to dwell because the WWE is in danger from the evil \(noun2) and the other wrestlers cannot help. John Cena travels to \(place1) to try to help, but he becomes separated from his friends and all seems \(noun3). THe villain's arrogance creats an opening and the friends reunite to defeat their enemy with the of \(adverb1). That conveniently solves everything. John Cena learns a lesson that anwsers his personal dilemma and he is rewarded with a new \(noun4).")
+            savedLibs.updateValue("John Cena is concerned about his \(noun1). But there's no time to dwell because the WWE is in danger from the evil \(noun2) and the other wrestlers cannot help. John Cena travels to \(place1) to try to help, but he becomes separated from his friends and all seems \(noun3). THe villain's arrogance creats an opening and the friends reunite to defeat their enemy with the of \(adverb1). That conveniently solves everything. John Cena learns a lesson that anwsers his personal dilemma and he is rewarded with a new \(noun4).", forKey: 1)
             print("do you want to play again? yes = 1. exit program = 2. retern to main menu = 0")
             var somthing1 = input()
             var somthing2 = true
@@ -62,6 +63,9 @@ while game == true {
     } else if select == "2" {
         var play2 = true
         while play2 == true {
+/*
+This is the code jose did
+*/
             print("Type a persons name")
             var person2 = input()
             print("Type a place")
@@ -91,6 +95,7 @@ while game == true {
             print("HA GOT YOU AGAIN but seriously last one just type an adjective")
             var adjective222 = input()
             print("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(pluralNoun2), and they make \(adjective22) \(pluralNoun22) there. Many people also go to \(place22) to \(actionVerd2) or see the \(pluralNoun222). The people that live there love to eat \(pluralNoun2222) and are very pround of their big \(noun2). They also like to \(actionVerd22) in the sun and swim in the \(actionVerd222)! It was a really \(adjective222) trip! ")
+            savedLibs.updateValue("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(pluralNoun2), and they make \(adjective22) \(pluralNoun22) there. Many people also go to \(place22) to \(actionVerd2) or see the \(pluralNoun222). The people that live there love to eat \(pluralNoun2222) and are very pround of their big \(noun2). They also like to \(actionVerd22) in the sun and swim in the \(actionVerd222)! It was a really \(adjective222) trip! ", forKey: 2)
             print("")
             print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
             var again3 = true
@@ -125,7 +130,7 @@ while game == true {
             var adj32 = input()
             print("Type a noun")
             var noun3 = input()
-            //stinky, fart, poop,
+            //stinky, fart, poop, boogers, armpit,
             print("Type an animal")
             var ani3 = input()
             print("Type a vegetable")
@@ -139,8 +144,7 @@ while game == true {
             print("Your completed Mad Lib is:")
             print("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.")
             print("")
-            var lib3 = "Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas."
-            savedLibs.updateValue(lib3, forKey: 3)
+            savedLibs.updateValue("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.", forKey: 3)
             print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
             var again3 = true
             while again3 == true {
@@ -165,6 +169,9 @@ while game == true {
     }else if select == "4" {
         var play4 = true
         while play4 == true {
+/*
+This is the code jose did
+*/
             print("Type a Verd ending in -ing")
             var verd4 = input()
             print("Type an animal")
@@ -176,6 +183,8 @@ while game == true {
             print("Type a verd")
             var verd44 = input()
             print("There are to many \(verd4) \(animal4) on this \(adjective4) \(place4)! He screamed while he \(verd44)")
+            savedLibs.updateValue("There are to many \(verd4) \(animal4) on this \(adjective4) \(place4)! He screamed while he \(verd44)", forKey: 4)
+            print("")
             print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
             var again3 = true
             while again3 == true {
@@ -232,23 +241,27 @@ while game == true {
         while review == true {
         print("Which Mad Lib would you like to review?")
         print("1. ")
-        print("2. ")
+        print("2. ROAD TRIP")
         print("3. Lunch Room")
-        print("4. ")
+        print("4. Snakes on a Plane")
         print("5. ")
         print("6. Return to main menu")
         var reviewSelect = input()
             if reviewSelect == "1" {
-                
+                print(savedLibs[1])
+                print("")
             }else if reviewSelect == "2" {
-                
+                print(savedLibs[2])
+                print("")
             }else if reviewSelect == "3" {
                 print(savedLibs[3])
                 print("")
             }else if reviewSelect == "4" {
-                
+                print(savedLibs[4])
+                print("")
             }else if reviewSelect == "5" {
-                
+                print(savedLibs[5])
+                print("")
             }else if reviewSelect == "6" {
                 review = false
                 game = true
