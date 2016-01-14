@@ -62,6 +62,9 @@ while game == true {
     } else if select == "2" {
         var play2 = true
         while play2 == true {
+/*
+This is the code jose did
+*/
             print("Type a persons name")
             var person2 = input()
             print("Type a place")
@@ -165,6 +168,9 @@ while game == true {
     }else if select == "4" {
         var play4 = true
         while play4 == true {
+/*
+This is the code jose did
+*/
             print("Type a Verd ending in -ing")
             var verd4 = input()
             print("Type an animal")
