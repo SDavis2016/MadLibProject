@@ -13,6 +13,7 @@ func input() -> String {
     var strData = NSString(data: inputData, encoding: NSUTF8StringEncoding)!
     return strData.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
 }
+// This domain brought to you by EpicSebo. This is the main menu, where people then select which if statement they wish to go to, so they can play the selected game.
 var savedLibs: [Int: String] = [8: "Terminated"]
 print("Welcome to Mad Lib Mania! Where you have hundreds (5) of fun (kinda boring) Mad Libs to choose from. Please, select your Mad Lib number!")
 var game = true
@@ -123,7 +124,7 @@ this is when your done with the mad lib it will give you the option to do anothe
         }
     } else if select == "3" { // EpicSebo Domain
         var play3 = true
-        while play3 == true {
+        while play3 == true { // the following is peoples input on each part of the mad lib so they can end with a completed mad lib.
             print("Welcome to Lunch Room!")
             print("Type a type of container")
             var container3 = input()
@@ -144,10 +145,13 @@ this is when your done with the mad lib it will give you the option to do anothe
             var col3 = input()
             print("Lats one! Type an adjective")
             var adj33 = input()
+            //this is the print of the completed mad lib
             print("Your completed Mad Lib is:")
             print("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.")
             print("")
+            //this is storing the completed mad lib in a library to be reviewed later if the choose.
             savedLibs.updateValue("Make sure your lunch \(container3) is filled with nutritious \(adj3) food. Do not go to the \(adj32) food stand across the street from school. The hamburgers they serve are fried in \(noun3) and are made of \(ani3) meat. So take a sandwich made of \(veggie3) or \(veggie32) it's much healthier! Drink \(col3) milk instead of \(adj33) colas.", forKey: 3)
+            // the following is the after mad lib questionstions to where they would like to go next.
             print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
             var again3 = true
             while again3 == true {
