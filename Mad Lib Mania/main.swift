@@ -279,7 +279,7 @@ this is when your done with the mad lib it will give you the option to do anothe
     }else if select == "6" { // another EpicSebo domain, this is the review menu, for users to choose which madlib they wish to draw out of the library and print
         var review = true
         while review == true {
-        print("Which Mad Lib would you like to review?")
+        print("Which Mad Lib would you like to review? Nil means ou ave not cmpleted the selected Mad Lib yet!")
         print("1. JOHN CENA!!!!!!!!!!!!!!!!!")
         print("2. ROAD TRIP")
         print("3. Lunch Room")
