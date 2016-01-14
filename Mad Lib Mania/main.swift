@@ -165,7 +165,7 @@ this is when your done with the mad lib it will give you the option to do anothe
             print("Type a color")
             var col3 = input()
             if col3 == "green" {
-                print("If you are drinking green milk, then you have other problems")
+                print("If you are green green food, then you have other problems")
             }
             print("Lats one! Type an adjective")
             var adj33 = input()
