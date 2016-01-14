@@ -65,7 +65,7 @@ while game == true {
         var play2 = true
         while play2 == true {
 /*
-This is the code jose did
+This part of the code prints that to the console and tells it to fill in the blanks on the bottom one that is the complete mad lib
 */
             print("Type a persons name")
             var person2 = input()
@@ -97,6 +97,9 @@ This is the code jose did
             var adjective222 = input()
             print("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(pluralNoun2), and they make \(adjective22) \(pluralNoun22) there. Many people also go to \(place22) to \(actionVerd2) or see the \(pluralNoun222). The people that live there love to eat \(pluralNoun2222) and are very pround of their big \(noun2). They also like to \(actionVerd22) in the sun and swim in the \(actionVerd222)! It was a really \(adjective222) trip! ")
             savedLibs.updateValue("Last summer, my mom and dad took ne and \(person2) on a trip to \(place2). The weather there is very \(adjective2)! Northern \(place2) has many \(pluralNoun2), and they make \(adjective22) \(pluralNoun22) there. Many people also go to \(place22) to \(actionVerd2) or see the \(pluralNoun222). The people that live there love to eat \(pluralNoun2222) and are very pround of their big \(noun2). They also like to \(actionVerd22) in the sun and swim in the \(actionVerd222)! It was a really \(adjective222) trip! ", forKey: 2)
+/*
+this is when your done with the mad lib it will give you the option to do another return to menu or exit the program  and also tell you if you want to play again
+*/
             print("")
             print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
             var again3 = true
@@ -119,7 +122,7 @@ This is the code jose did
                 }
             }
         }
-    } else if select == "3" {
+    } else if select == "3" { // EpicSebo Domain
         var play3 = true
         while play3 == true {
             print("Welcome to Lunch Room!")
@@ -171,7 +174,7 @@ This is the code jose did
         var play4 = true
         while play4 == true {
 /*
-This is the code jose did
+This part of the code prints that to the console and tells it to fill in the blanks on the bottom one that is the complete mad lib
 */
             print("Type a Verd ending in -ing")
             var verd4 = input()
@@ -185,6 +188,10 @@ This is the code jose did
             var verd44 = input()
             print("There are to many \(verd4) \(animal4) on this \(adjective4) \(place4)! He screamed while he \(verd44)")
             savedLibs.updateValue("There are to many \(verd4) \(animal4) on this \(adjective4) \(place4)! He screamed while he \(verd44)", forKey: 4)
+/*
+this is when your done with the mad lib it will give you the option to do another return to menu or exit the program  and also tell you if you want to play again
+*/
+            
             print("")
             print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
             var again3 = true
@@ -222,6 +229,7 @@ This is the code jose did
             print("finaly an adjective")
             var adjetive2 = input()
             print("There's this \(adjective) guy named \(name) who brings \(noun) to all the \(pluralnoun) who've been \(adjetive2).")
+            savedLibs.updateValue("There's this \(adjective) guy named \(name) who brings \(noun) to all the \(pluralnoun) who've been \(adjetive2).", forKey: 5)
             print("do you want to play again? yes = 1. exit program = 2. retern to main menu = 0")
             var somthing1 = input()
             var somthing2 = true
@@ -243,11 +251,11 @@ This is the code jose did
         var review = true
         while review == true {
         print("Which Mad Lib would you like to review?")
-        print("1. ")
+        print("1. JOHN CENA!!!!!!!!!!!!!!!!!")
         print("2. ROAD TRIP")
         print("3. Lunch Room")
         print("4. Snakes on a Plane")
-        print("5. ")
+        print("5. This Guy")
         print("6. Return to main menu")
         var reviewSelect = input()
             if reviewSelect == "1" {
