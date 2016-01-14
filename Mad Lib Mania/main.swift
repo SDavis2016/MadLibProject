@@ -206,6 +206,7 @@ This is the code jose did
                 }
             }
         }
+// samuel did this
     }else if select == "5" {
         var play5 = true
         while play5 == true {
@@ -220,6 +221,7 @@ This is the code jose did
             print("finaly an adjective")
             var adjetive2 = input()
             print("There's this \(adjective) guy named \(name) who brings \(noun) to all the \(pluralnoun) who've been \(adjetive2).")
+            print("do you want to play again? yes = 1. exit program = 2. retern to main menu = 0")
             var somthing1 = input()
             var somthing2 = true
             while somthing2 == true {
