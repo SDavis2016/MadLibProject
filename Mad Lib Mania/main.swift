@@ -21,7 +21,7 @@ while game == true {
     print("1. PLease Name Your Mad Lib")
     print("2. ROAD TRIP")
     print("3. Lunch Room")
-    print("4. PLease Name Your Mad Lib")
+    print("4. Snakes on a Plane")
     print("5. PLease Name Your Mad Lib")
     print("6. Review an already completed Mad Lib")
     print("7. Exit the Mania")
@@ -174,6 +174,7 @@ while game == true {
             print("Type a verd")
             var verd44 = input()
             print("There are to many \(verd4) \(animal4) on this \(adjective4) \(place4)! He screamed while he \(verd44)")
+            print("")
             print("Would you like to play again? (warning it will reset all your previous answers)  If so, press 1. If you would like to return to the main menu, press 2. If you are done with Mad Lib Mania, to exit press 3.")
             var again3 = true
             while again3 == true {
