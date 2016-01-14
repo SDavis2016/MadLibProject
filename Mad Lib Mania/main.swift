@@ -21,7 +21,7 @@ while game == true {
     print("1. JOHN CENA!!!!!!!!!!!!!!!!!")
     print("2. ROAD TRIP")
     print("3. Lunch Room")
-    print("4. PLease Name Your Mad Lib")
+    print("4. Snakes on a Plane")
     print("5. This Guy")
     print("6. Review an already completed Mad Lib")
     print("7. Exit the Mania")
