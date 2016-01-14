@@ -118,7 +118,7 @@ This is the code jose did
                 }
             }
         }
-    } else if select == "3" {
+    } else if select == "3" { // EpicSebo Domain
         var play3 = true
         while play3 == true {
             print("Welcome to Lunch Room!")
@@ -240,11 +240,11 @@ This is the code jose did
         var review = true
         while review == true {
         print("Which Mad Lib would you like to review?")
-        print("1. ")
+        print("1. JOHN CENA!!!!!!!!!!!!!!!!!")
         print("2. ROAD TRIP")
         print("3. Lunch Room")
         print("4. Snakes on a Plane")
-        print("5. ")
+        print("5. This Guy")
         print("6. Return to main menu")
         var reviewSelect = input()
             if reviewSelect == "1" {
