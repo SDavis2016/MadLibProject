@@ -48,14 +48,18 @@ while game == true {
             //EpicSebo saving MadLib to library
             savedLibs.updateValue("John Cena is concerned about his \(noun1). But there's no time to dwell because the WWE is in danger from the evil \(noun2) and the other wrestlers cannot help. John Cena travels to \(place1) to try to help, but he becomes separated from his friends and all seems \(noun3). THe villain's arrogance creats an opening and the friends reunite to defeat their enemy with the of \(adverb1). That conveniently solves everything. John Cena learns a lesson that anwsers his personal dilemma and he is rewarded with a new \(noun4).", forKey: 1)
             print("do you want to play again? yes = 1. exit program = 2. retern to main menu = 0")
-            var somthing1 = input()
             var somthing2 = true
             while somthing2 == true {
+                var somthing1 = input()
                 if somthing1 == "1" {
                     play1 = true
+                    somthing2 = false
                 } else if somthing1 == "2" {
+                    somthing2 = false
+                    play1 = false
                     game = false
                 } else if somthing1 == "0" {
+                    play1 = false
                     somthing2 = false
                     game = true
                 } else {
@@ -260,15 +264,19 @@ this is when your done with the mad lib it will give you the option to do anothe
             //EpicSebo saving MadLib to library
             savedLibs.updateValue("There's this \(adjective) guy named \(name) who brings \(noun) to all the \(pluralnoun) who've been \(adjetive2).", forKey: 5)
             print("do you want to play again? yes = 1. exit program = 2. retern to main menu = 0")
-            var somthing1 = input()
             var somthing2 = true
             while somthing2 == true {
+                var somthing1 = input()
                 if somthing1 == "1" {
                     play5 = true
+                    somthing2 = false
                 } else if somthing1 == "2" {
+                    somthing2 = false
+                    play5 = false
                     game = false
                 } else if somthing1 == "0" {
                     somthing2 = false
+                    play5 = false
                     game = true
                 } else {
                     print("please choose one of the options")
@@ -279,7 +287,7 @@ this is when your done with the mad lib it will give you the option to do anothe
     }else if select == "6" { // another EpicSebo domain, this is the review menu, for users to choose which madlib they wish to draw out of the library and print
         var review = true
         while review == true {
-        print("Which Mad Lib would you like to review? Nil means ou ave not cmpleted the selected Mad Lib yet!")
+        print("Which Mad Lib would you like to review? Nil means you have not cmpleted the selected Mad Lib yet!")
         print("1. JOHN CENA!!!!!!!!!!!!!!!!!")
         print("2. ROAD TRIP")
         print("3. Lunch Room")
@@ -314,7 +322,7 @@ this is when your done with the mad lib it will give you the option to do anothe
         print("Thanks for experiencing the wasted time of your life!")
         game = false
     } else { // EpicSebo with another tip, this is if they didnt choose within the provided options.
-        print("Please select a game number. If you would like to exit and save yourself press 7.")
+        print("Please select a game number. If you would like to exit and save yourself, press 7.")
         game = true
     }
 }
